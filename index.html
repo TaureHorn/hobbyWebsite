@@ -1,38 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Probably want/ need to add more meta statements-->
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <title> Welcome Home</title>
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+<!-- Probably want/ need to add more meta statements-->
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Welcome Home</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+</head>
+
 <body class="body">
-    <div class="container" id="title-and-subtitle">
-        <h1> VOLCANOES!</h1>
-        <h2> Wondrous... Majestic... Deadly </h2>
+    <!-- Nav bar | Homepage | What is a volcano? | Volcanoes, Humans and History | Gallery | Quiz -->
+
+    <div id="title-and-subtitle">
+        <h1 style="text-align: center; font-family: monospace; font-size: 60px;"> VOLCANOES!</h1>
     </div>
     <!-- Brief explainers section, intro to basics, mentions of complicated topics-->
 
-    <div class="container"> 
-        <p> The word volcano typically conjures some particularly violent and destructive images in peoples minds.
-            Of fiery hills spewing smoke, ash and molten lava. While this is not untrue these destructive events are only a piece of the whole picture.
-            Most of the time, volcanoes lie dormat, asleep. But beneath the surface grand forces of geology, chemistry and physics are at play.
-        </p>
+    <div class="container">
+        <div class="jumbotron">
+            <p> The word volcano typically conjures some particularly violent and destructive images in peoples minds.
+                Of fiery hills spewing smoke, ash and molten lava. While this is not untrue these destructive events
+                are only a piece of the whole picture. Most of the time, volcanoes lie dormant, asleep.
+                But beneath the surface grand forces of geology, chemistry and physics are at play.
+            </p>
+        </div>
     </div>
     <!-- Links section. Other pages are 
                             "What is a volcano?
-                            "The science behind volcanoes"
                             "Volcanoes, Humans and History"
                             "Gallery"                        
                             "Quiz"                     
                             
 
                             Add links to these pages with a series of cards (checkout bootstrap)"-->
+
+    <div id="card-navigation" class="container">
+        <div id="card-header">
+            <header> What would you like to learn?</header>
+        </div>
+        <div id="cards" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div id="1-explainer" class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80"
+                    class="card-img-top" alt="Fresh lava flows">
+                <div class="card-body">
+                    <h5 class="card-title">What is a volcano?</h5>
+                    <p class="card-text">Sure it's a mountain that spews fire, but why is it there, how does it work?
+                    </p>
+                    <a href="volcanoes_1-explainer.html" class="btn btn-primary">Your journey begins...</a>
+                </div>
+            </div>
+
+            <div id="2-history" class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1585833621147-110412559b2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    class="card-img-top" alt="Houses buried in volcanic ash">
+                <div class="card-body">
+                    <h5 class="card-title">Volcanoes, Humans and History</h5>
+                    <p class="card-text">I know volcanoes, hot rocks 'n' stuff. Cool. How does that relate to me?</p>
+                    <a href="volcanoes_2-history.html" class="btn btn-primary">Bon voyage...</a>
+                </div>
+            </div>
+
+            <div id="3-gallery" class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1621795618610-be66e2173430?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    class="card-img-top" alt="Pretty beach in front of a volcano">
+                <div class="card-body">
+                    <h5 class="card-title">Gallery</h5>
+                    <p class="card-text">I'm just here for the pretty pictures.</p>
+                    <a href="volcanoes_3-gallery.html" class="btn btn-primary">Allons-y</a>
+                </div>
+            </div>
+
+            <div id="4-quiz" class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXhhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top" alt="person filling in multiple choice test">
+                <div class="card-body">
+                    <h5 class="card-title">Quiz!</h5>
+                    <p class="card-text">Test your knowledge of volcanoes.</p>
+                    <a href="volcanoes_4-quiz.html" class="btn btn-primary">Quiz time!</a>
+                </div>
+            </div>
+            <!-- clean up bootstraps styles and consolidate to css -->
+
+        </div>
+    </div>
+
 </body>
+
 </html>
