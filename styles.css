@@ -9,18 +9,17 @@ body {
 p,
 h4,
 .title,
-figcaption,
 li,
 .card-title,
 .hyperlink {
     font-family: monospace, calibri;
-    color: rgb(200, 200, 200)
+    color: rgb(225, 225, 225)
+    /* standard text properties */
 }
 
 
 h4 {
-    margin-top: 2%;
-    margin-bottom: -0.25%;
+    margin-top: 5%;
 }
 
 .title {
@@ -81,15 +80,11 @@ h4 {
 hr {
     border: -1;
     border-top: 5px dotted #fff;
+    margin-top: -0.3rem;
 
 }
 
-figcaption {
-    text-align: center;
-    font-weight: 200;
-}
-
-.text-container {
+.text-container, #jumbo-narrow {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -98,8 +93,18 @@ figcaption {
 }
 
 .container-dark {
-    background-color: rgba(0, 0, 0, 0.33);
-}
+    /* background-color: rgba(0, 0, 0, 0.33); */
+    background-image: linear-gradient(
+        0deg,
+        rgba(255,130,0,0.7),
+        rgba(255,240,0,0.7)
+    );
+    box-shadow:  rgba(0, 0, 0, 0.65) 0px 1px 0px 0px inset,
+    rgba(0, 0, 0, 0.2) 0px 15px 10px -10px inset;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding: 0.25rem;
+    }
 
 .container-semi-dark {
     background-color: rgba(0, 0, 0, 0.15);
@@ -109,39 +114,46 @@ figcaption {
     margin-left: 15%;
 }
 
-.gallery-img {
-    width: 100%;
-
+.container-fluid {
+    margin-left: 30%;
+    margin-right: 30%;
+    /* aligns navbar text centre */
 }
 
-footer {
-    margin-top: 10%;
-    box-shadow: rgba(240, 46, 170, 0.6) 0px 5px, rgba(240, 46, 170, 0.5) 0px 10px, rgba(240, 46, 170, 0.4) 0px 15px, rgba(240, 46, 170, 0.3) 0px 20px, rgba(240, 46, 170, 0.25) 0px 25px;
+.gallery-img {
+    width: 100%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+
 }
 
 .navbar {
-    background-color: #646464 !important;
-
-
-}
+    margin-top: 10%;
+    background-color: #747474 !important;
+    box-shadow:  rgba(0, 0, 0, 0.65) 0px 1px 0px 0px inset,
+    rgba(0, 0, 0, 0.6) 0px 25px 20px -20px inset;
+    }
 
 .jumbotron {
     text-align: center;
     margin-bottom: 5%;
     background-color: rgba(0, 0, 0, 0.33);
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     font-weight: 500;
 }
 
-.alert-warning {
-    background-color: rgba(255, 220, 0, 0.4);
-    color: rgb(255, 255, 120);
-    margin: 1%;
+.alert-warning, figcaption, .btn-secondary {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255,130,0,0.7),
+        rgba(255,240,0,0.7)
+    );
+    color: rgb(15, 15, 15);
+    text-align: center;
 }
 
 .btn,
-.alert,
-.navbar {
+.alert, {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
 }
