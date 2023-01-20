@@ -16,7 +16,7 @@
 <body>
 
     <div id="title">
-        <h1 style="text-align: center; font-family: monospace; font-size: 60px;"> VOLCANOES - HUMANS AND HISTORY</h1>
+        <h1 class="title"> VOLCANOES - HUMANS AND HISTORY</h1>
     </div>
 
     <div id="jubmo-pageIntro" class="container">
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div id="paragraphs" class="container">
+    <div id="paragraphs" class="text-container">
         <div id="agriculture"></div>
         <div id="header">
             <h4>Volcanoes and Agriculture</h4>
@@ -49,7 +49,7 @@
             </p>
             <p> Volcanic products are rich in a host of chemicals that can be useful to living organisms. Which of these
                 chemicals are in abundance depends on the type of magma the volcano erupts
-                (see <a href="volcanoes_1-explainer">What is a volcano?</a>)
+                (see <a class="hyperlink" href="volcanoes_1-explainer">What is a volcano?</a>)
                 but broadly, volcanic products are rich in things such as;
             </p>
             <ul id="abundant-chemicals">
@@ -115,22 +115,23 @@
 
                 </p>
                 <div class="container">
-                    <div id="cast" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div id="1-explainer" class="card" style="width: 18rem;">
+                    <div id="cast">
+                        <div id="1-explainer" class="card-history">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Pompeii_Garden_of_the_Fugitives_02.jpg"
                                 class="card-img-top" alt="Bodies cast in volcanic ash">
                             <div class="card-body">
-                                <p class="card-text">The casts of some victims in the so-called "Garden of the
+                                <p class="card-text-history">The casts of some victims in the so-called "Garden of the
                                     Fugitives", Pompeii
                                 </p>
                             </div>
                         </div>
 
-                        <div id="skeleton" class="card" style="width: 18rem;">
+                        <div id="skeleton" class="card-history">
                             <img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Ring_Lady.JPG" class="card-img-top"
                                 alt="skeleton buried in volcanic ash">
                             <div class="card-body">
-                                <p class="card-text">A skeleton dubbed "Ring Lady" buried in volcanic ash, Herculeneum
+                                <p class="card-text-history">A skeleton dubbed "Ring Lady" buried in volcanic ash,
+                                    Herculeneum
                                 </p>
 
                             </div>
@@ -140,24 +141,28 @@
             </div>
         </div>
     </div>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="volcanoes_1-explainer.html">What is a volcano?</a>
-                    <a class="nav-link active" aria-current="page" href="volcanoes_2-history.html"> Volcanoes, Humans
-                        and History </a>
-                    <a class="nav-link" href="volcanoes_3-gallery.html">Gallery</a>
+    <footer>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="volcanoes_1-explainer.html">What is a volcano?</a>
+                        <a class="nav-link active" aria-current="page" href="volcanoes_2-history.html"
+                            style="text-decoration: underline;"> Volcanoes,
+                            Humans
+                            and History </a>
+                        <a class="nav-link" href="volcanoes_3-gallery.html">Gallery</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </footer>
 </body>
 
 </html>
