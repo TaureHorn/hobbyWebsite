@@ -1,0 +1,147 @@
+body {
+    background-image: linear-gradient(130deg,
+            rgb(10, 15, 15),
+            rgb(65, 60, 60));
+    margin: 2vh, 5vw, 0, 5vw;
+
+}
+
+p,
+h4,
+.title,
+figcaption,
+li,
+.card-title,
+.hyperlink {
+    font-family: monospace, calibri;
+    color: rgb(200, 200, 200)
+}
+
+
+h4 {
+    margin-top: 2%;
+    margin-bottom: -0.25%;
+}
+
+.title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: monospace, calibri;
+    color: rgb(220, 220, 220);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card-home {
+    background-color: rgba(0, 0, 0, 0.33);
+    display: inline-block;
+    width: 33%;
+    height: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-history {
+    display: inline;
+    width: 20%;
+    height: 100%;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 500px;
+}
+
+.card-title {
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.card-text {
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 5%;
+}
+
+.card-text-history {
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.33);
+    margin-bottom: 5%;
+
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.33);
+    display: inline;
+}
+
+
+hr {
+    border: -1;
+    border-top: 5px dotted #fff;
+
+}
+
+figcaption {
+    text-align: center;
+    font-weight: 200;
+}
+
+.text-container {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+
+}
+
+.container-dark {
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+.container-semi-dark {
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-bottom: 10%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.gallery-img {
+    width: 100%;
+
+}
+
+footer {
+    margin-top: 10%;
+    box-shadow: rgba(240, 46, 170, 0.6) 0px 5px, rgba(240, 46, 170, 0.5) 0px 10px, rgba(240, 46, 170, 0.4) 0px 15px, rgba(240, 46, 170, 0.3) 0px 20px, rgba(240, 46, 170, 0.25) 0px 25px;
+}
+
+.navbar {
+    background-color: #646464 !important;
+
+
+}
+
+.jumbotron {
+    text-align: center;
+    margin-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.33);
+    padding: 1em;
+    border-radius: 1em;
+    font-weight: 500;
+}
+
+.alert-warning {
+    background-color: rgba(255, 220, 0, 0.4);
+    color: rgb(255, 255, 120);
+    margin: 1%;
+}
+
+.btn,
+.alert,
+.navbar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
+}

@@ -9,9 +9,9 @@
 
     <title> Welcome Home</title>
 
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -19,7 +19,7 @@
 
 
     <div id="title-and-subtitle">
-        <h1 style="text-align: center; font-family: monospace; font-size: 60px;"> VOLCANOES!</h1>
+        <h1 class="title"> VOLCANOES!</h1>
     </div>
 
 
@@ -36,37 +36,42 @@
 
     <div id="card-navigation" class="container">
         <div id="card-header">
-            <header> What would you like to learn?</header>
+            <h4> What would you like to learn?</h4>
+            <hr>
         </div>
-        <div id="cards" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div id="1-explainer" class="card" style="width: 33%; height: 60%">
+        <div id="cards">
+            <div id="1-explainer" class="card-home">
                 <img src="https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80"
                     class="card-img-top" alt="Fresh lava flows">
                 <div class="card-body">
                     <h5 class="card-title">What is a volcano?</h5>
                     <p class="card-text">Sure it's a mountain that spews fire, but why is it there, how does it work?
                     </p>
-                    <a href="volcanoes_1-explainer.html" class="btn btn-primary">Your journey begins...</a>
+                    <a href="volcanoes_1-explainer.html" class="btn btn-warning" target="_blank"
+                        style="display:flex; margin: 5%;">Your journey begins...</a>
                 </div>
             </div>
 
-            <div id="2-history" class="card" style="width: 33%; height: 60%">
+            <div id="2-history" class="card-home">
                 <img src="https://images.unsplash.com/photo-1585833621147-110412559b2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     class="card-img-top" alt="Houses buried in volcanic ash">
                 <div class="card-body">
                     <h5 class="card-title">Volcanoes, Humans and History</h5>
                     <p class="card-text">I know volcanoes, hot rocks 'n' stuff. Cool. How does that relate to me?</p>
-                    <a href="volcanoes_2-history.html" class="btn btn-primary">Bon voyage...</a>
+                    <a href="volcanoes_2-history.html" class="btn btn-warning" target="_blank"
+                        style="display:flex; margin: 5%;">Bon voyage...</a>
                 </div>
             </div>
 
-            <div id="3-gallery" class="card" style="width: 33%; height: 60%">
+            <div id="3-gallery" class="card-home">
                 <img src="https://images.unsplash.com/photo-1621795618610-be66e2173430?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     class="card-img-top" alt="Pretty beach in front of a volcano">
                 <div class="card-body">
                     <h5 class="card-title">Gallery</h5>
-                    <p class="card-text">I'm just here for the pretty pictures.</p>
-                    <a href="volcanoes_3-gallery.html" class="btn btn-primary">Allons-y</a>
+                    <p class="card-text">Please just take me to see all the pretty pictures you took on your holidays :)
+                    </p>
+                    <a href="volcanoes_3-gallery.html" class="btn btn-warning" target="_blank"
+                        style="display:flex; margin: 5%;">Allons-y</a>
                 </div>
             </div>
             <!-- clean up bootstraps styles and consolidate to css -->
@@ -74,22 +79,25 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="volcanoes_1-explainer.html">What is a volcano?</a>
-                    <a class="nav-link" href="volcanoes_2-history.html">Volcanoes, Humans and History</a>
-                    <a class="nav-link" href="volcanoes_3-gallery.html">Gallery</a>
+    <footer>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" style="text-decoration: underline;">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="volcanoes_1-explainer.html">What is a volcano?</a>
+                        <a class="nav-link" href="volcanoes_2-history.html">Volcanoes, Humans and History</a>
+                        <a class="nav-link" href="volcanoes_3-gallery.html">Gallery</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </footer>
 
 </body>
 
